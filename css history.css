@@ -1,0 +1,109 @@
+<html>
+<head>
+
+</head> 
+    <style> 
+        .heading{
+margin: 0;
+  padding: 0;
+  width: 232px;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+        }
+        .heading a.yovo{
+  background-color: peachpuff;
+  color: palevioletred;
+ padding: 35;
+ margin: auto;
+border-radius: 15px;
+            
+            
+}
+        .main {
+  margin-left: 270px;
+  font-size: 28px; 
+ padding: 5px 10px;}
+
+.heading a:hover:not(.active) {
+  background-color: yellowgreen;
+  color: white;
+}
+        
+        .heading a{
+            display: block;
+            background-color:white;
+  color: blueviolet;
+  padding: px;
+ text-decoration:none;
+        }
+        
+        div.content {
+  margin-left: 200px;
+  padding: 2px 90px;
+  height: 2000px;
+}
+
+        @media screen and (max-width: 700px) {
+  .heading {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .heading a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .heading a {
+    text-align: center;
+    float: none;
+  }
+}     
+    </style>
+    
+<body>
+    <div class="heading">
+<li ><h3><a class="yovo"> CSS TUTORIAL</a></h3></li>
+<ul><li><a class="heading" href="#">CSS: Introduction</a></li>
+<li><a class="heading" href="#overview">CSS: Syntax</a></li>
+    <li><a class="heading" href="https://www.tutorialspoint.com/css/css_colors.htm">CSS: Colors </a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/css/css_backgrounds.htm">CSS: Background</a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/css/css_fonts.htm">Css- Font</a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/css/css_images.htm">CSS- Image</a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/css/css_text.htm">CSS- Text</a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/css/css_links.htm"></a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/html/html_lists.htm">HTML: Lists</a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/html/html_text_links.htm">HTML: Text Links</a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/html/html_image_links.htm">HTML: Image Links</a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/html/html_colors.htm">HTML: Colors</a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/html/html_fonts.htm">HTML: Fonts</a></li>
+<li><a class="heading" href="https://www.tutorialspoint.com/html/html_forms.htm">HTML: Forms</a></li>   
+</ul>
+    </div>
+    <div id="intro"class="main">
+  <h2>HTML HISTORY</h2>
+ 
+</div>
+    
+     <div id="overview"class="main">
+  <h2>Overview</h2>   
+         
+</div>
+    
+      <div id="tag" class="main">
+  <h2>HTML Some Basic Tags</h2>
+          
+          <ul>
+<li>
+</li>
+ </ul>
+    
+    </div>
+    
+    
+  
+   
+
+    </body></html>

@@ -1,0 +1,104 @@
+
+        .main {
+  margin-left: 240px;
+  font-size: 25px; 
+2}
+        
+        .roll{
+  width: 230px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: visible;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-bottom: 20px;
+      margin:-20;
+            border-bottom-right-radius:30px; 
+            border-top-right-radius: 50px;    
+        }
+  .roll a{
+            display: block;
+            background-color:black;
+  padding: 2px 9px;
+  text-decoration: none;
+  font-size: 23.5px;
+  color: white;   
+        }
+          
+        
+    .roll a.yovo{
+   background-color:#00ff99;
+  color: fuchsia;
+ padding: 35;
+ margin: 35;
+ margin-bottom:1px;
+ margin-right: 15px;
+border-radius: 15px;      
+}
+  
+        
+        .roll a:hover{
+  color: fuchsia;
+     background-color:#66ffff; transition: 0.5s; 
+     border-radius: 25px;
+    
+}
+.roll a.yovo:hover{
+    border-radius: 50px; 
+    color: greenyellow;
+    background-color: #9900cc;
+}
+        
+   
+        div.content {
+  margin-left: 200px;
+  padding: 2px 90px;
+  height: 2000px;
+}
+
+        @media screen and (max-width: 700px) {
+  .roll {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .roll a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+#css-img{
+    padding-left:40%;
+}
+#cen{
+    text-align: center;
+    background-color: lemonchiffon;
+    color: darkgoldenrod;
+    border:5px solid;
+    border-left-width: 400;
+    border-right-width: 400;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-color: orchid;
+    border-color: greenyellow;
+}
+#color{
+    color: darkgoldenrod;
+}
+#color1{
+    color: blue;
+}
+#cet{
+      text-align: center;
+}
+#shift
+{
+    text-align: center;
+    border:50px solid;
+    border-left-width: 400;
+    border-right-width: 400;
+    border-color: plum;
+    border-radius: 500px;
+    
+}
