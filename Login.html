@@ -134,11 +134,11 @@
             </form>
 
 
-            <form class="login-form" action="index.html" onsubmit="return action1();">
+            <form class="login-form" action ="index.html" onsubmit="return validate();">
                 <input type="text" id="uname" placeholder="User Name" />
                 <input type="Password" id="pass" placeholder="Password" />
 
-                <button onclick="action1()"><a href="#">Login</a></button>
+                <button onclick="validate()">Login</button> 
                 <p class="message">Not registered? <a href="#">Register</a></p>
             </form>
 
@@ -164,15 +164,14 @@
 
             if (name.trim() == '' || name.length < 4) {
 
-                alert("Please enter your name atleast in 5 chars.");
+                alert("Please enter your name atleast in 4 chars.");
                 return false;
-            } else if (document.getElementById("pass").value == "") {
+            } 
+            else if (document.getElementById("pass").value == "") {
                 alert("Please provide password...");
                 return false;
             } 
-            else {
-                return (true);
-            }
+            
 
         }
 
