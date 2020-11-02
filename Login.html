@@ -1,198 +1,223 @@
 <html>
 
 <head>
-   <title>CodeShala</title>
-   <link rel="icon" href="favicon.png">
-   
+    <title>CodeShala</title>
+    <link rel="icon" href="favicon.png">
+
 </head>
 
 <style>
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Img/login.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
 
-body
-{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(Img/login.jpg);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-}
-.main-nav
-{
-	float: right;
-	list-style: none;
-	margin-top: 30px;
+    .main-nav {
+        float: right;
+        list-style: none;
+        margin-top: 30px;
 
-}
-.main-nav li
-{
-	display: inline-block;
+    }
 
-}
-.main-nav li a
-{
-	color: white;
-	text-decoration: none;
-	padding: 5px 20px;
-	font-family: "Roboto", "sans-serif";
-	font-size: 17px;
-}
-.main-nav li.active a
-{
-	border: 1px solid white;
-}
-.main-nav li a:hover
-{
-	border: 1px solid white;
-}
-.row
-{
-	max-width: 1200px;
-	margin: auto;
-}
-.login-page
-{
-	width: 360px;
-	padding: 10% 0 0;
-	margin: auto;
-}
-.form
-{
-	position: relative;
-	z-index: 1;
-	background: rgba(0, 0, 0, 0.6);
-	max-width: 360px;
-	margin: 0 auto 100px;
-	padding: 45px;
-	text-align: center; 
-}
-.form input
-{
-	font-family: "Roboto", sans-serif;
-	outline: 1;
-	background: #f2f2f2;
-	width: 100%;
-	border: 0;
-	margin: 0 0 15px;
-	padding: 15px;
-	box-sizing: border-box;
-	font-size: 14px; 
-}
-.form button
-{
-	font-family: "Roboto", sans-serif;
-	text-transform: uppercase;
-	outline: 0;
-	background: #4caf50; 
-	width: 100%;
-	border: 0;
-	padding: 15px;
-	color: #ffffff;
-	font-size: 14px;
-	cursor: pointer; 
-}
-.form button:hover,
-.form button:active
-{
-	background: #43a047; 
-}
-.form .message
-{
-	margin: 15px 0 0;
-	color: aliceblue;
-	font-size: 12px;
+    .main-nav li {
+        display: inline-block;
 
-}
-.form .message a
-{
-	color: #4caf50;
-	text-decoration: none;
-}
-.form .register-form
-{
-	display: none;
-}a
-{text-decoration: none!important;
-    color: #fff!important;}
+    }
+
+    .main-nav li a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-family: "Roboto", "sans-serif";
+        font-size: 17px;
+    }
+
+    .main-nav li.active a {
+        border: 1px solid white;
+    }
+
+    .main-nav li a:hover {
+        border: 1px solid white;
+    }
+
+    .row {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .login-page {
+        width: 360px;
+        padding: 10% 0 0;
+        margin: auto;
+    }
+
+    .form {
+        position: relative;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.6);
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+    }
+
+    .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 1;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .form button {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #4caf50;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #ffffff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .form button:hover,
+    .form button:active {
+        background: #43a047;
+    }
+
+    .form .message {
+        margin: 15px 0 0;
+        color: aliceblue;
+        font-size: 12px;
+
+    }
+
+    .form .message a {
+        color: #4caf50;
+        text-decoration: none;
+    }
+
+    .form .register-form {
+        display: none;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: #fff !important;
+    }
 </style>
 
 <body>
-   <div class="row">
-      <ul class="main-nav">
-         <li><a href="index.html"> HOME </a></li>
-         <li class="active"><a href=""> LOGIN </a></li>
-      </ul>
-   </div>
-   <div class="login-page">
-      <div class="form">
-         <form class="register-form" validate="index.html" onsubmit="return validate();">
-            <input type="text" placeholder="User Name" id="t1" />
-            <input type="text" placeholder="Email Id" id="t4" />
-            <input type="Password" placeholder="Password" id="t2" />
-            <input type="Password" placeholder="Confirm Password" id="t3" />
-            <button>Create</button>
-            <p class="message">Already registered? <a href="#">Login</a></p>
-         </form>
-         
-         
-         <form class="login-form" validate="index.html" onsubmit="return validate();">
-            <input type="text" placeholder="User Name" />
-            <input type="Password" placeholder="Password" />
-            
-            <button><a href="index.html">Login</a></button>
-            <p class="message">Not registered? <a href="#">Register</a></p>
-         </form>
-      </div>
-   </div>
-   
-   
-   <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
-   
-     <script>
-      $('.message a').click(function () {
-         $('form').animate({
-            height: "toggle",
-            opacity: "toggle"
-         }, "slow");
-      });
-     
-      function validate() {
-         if (document.getElementById("t1").value == "") {
-            alert("Please provide username!");
-            return false;
-         }
+    <div class="row">
+        <ul class="main-nav">
+            <li><a href="index.html"> HOME </a></li>
+            <li class="active"><a href=""> LOGIN </a></li>
+        </ul>
+    </div>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form" validate2()="index.html" onsubmit="return validate2();">
+                <input type="text" placeholder="User Name" id="t1" />
+                <input placeholder="Email Id" id="t2" type="text" />
+                <input type="Password" placeholder="Password" id="t3" />
+                <input type="Password" placeholder="Confirm Password" id="t4" />
+                <button  >Create</button>
+                <p class="message">Already registered? <a href="#">Login</a></p>
+            </form>
 
 
-         if (document.getElementById("t2").value == "") {
-            alert("Please provide password");
-            return false;
-         }
+            <form class="login-form" action="index.html" onsubmit="return action1();">
+                <input type="text" id="uname" placeholder="User Name" />
+                <input type="Password" id="pass" placeholder="Password" />
+
+                <button onclick="action1()"><a href="#">Login</a></button>
+                <p class="message">Not registered? <a href="#">Register</a></p>
+            </form>
 
 
-         if (document.getElementById("t3").value == "") {
-            alert("Retype Password");
-            return false;
-         }
 
-         if (t2.value != t3.value) {
-            alert("Password Not Matched, Enter same password");
-            return false;
-         }
+        </div>
+    </div>
 
 
-         var emailID = document.getElementById("t4").value;
-         var atpos = emailID.indexOf("@");
-         var dotpos = emailID.lastIndexOf(".");
-         if (document.getElementById("t4").value == "" || atpos < 1 || (dotpos < atpos + 2)) {
-            alert("Please enter correct email ID");
-            return false;
-         }
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+    <script>
+        $('.message a').click(function() {
+            $('form').animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+        });
+
+        function validate() {
+
+            var name = document.getElementById("uname").value;
+
+            if (name.trim() == '' || name.length < 4) {
+
+                alert("Please enter your name atleast in 5 chars.");
+                return false;
+            } else if (document.getElementById("pass").value == "") {
+                alert("Please provide password...");
+                return false;
+            } 
+            else {
+                return (true);
+            }
+
+        }
 
 
-         {
-            alert("form submitted successfully");
-            return (true);
-         }
-      }
-   </script>
+
+        function validate2() {
+
+                    
+            var emailID = document.getElementById("t2").value;
+            var atpos = emailID.indexOf("@");
+            var dotpos = emailID.lastIndexOf(".");
+
+
+            if (document.getElementById("t1").value== "") {
+                alert("Enter full name");
+                return false;
+            }
+
+
+
+            else if (document.getElementById("t2").value == "" || atpos < 1 || (dotpos < atpos + 2)) {
+                alert("Please enter correct email ID");
+                return false;
+            }
+
+          if (document.getElementById("t3").value == " ") {
+                        alert("Enter Password");
+                        return false;
+                     }
+                     else if (document.getElementById("t4").value == " ") {
+                        alert("Enter Confirm Password");
+                        return false;
+                     }
+                     else if (t3.value != t4.value) {
+                        alert("Password Not Matched, please Enter same password");
+                        return false;
+                     }
+
+              {
+                alert("form submitted successfully");
+                return (true);
+            }
+
+      
+        }
+    </script>
 </body>
-
 </html>
